@@ -1,0 +1,49 @@
+# Tweet Sentiment Analysis
+
+This project focuses on building and evaluating machine learning models for sentiment analysis of tweets. The goal is to predict the sentiment expressed in a tweet, classifying it as positive, negative, or neutral.
+
+## Dataset
+
+The project uses a dataset of tweets, which is loaded from a CSV file. The dataset should contain at least two columns:
+
+- `full_text`: The raw text content of the tweet.
+- `sentiment`: The sentiment label for the tweet (e.g., positive, negative, neutral).
+
+## Methodology
+
+The following steps are involved in the sentiment analysis process:
+
+1. **Data Preprocessing:** Cleaning the tweets by removing HTML entities, non-alphanumeric characters, stop words, and applying lemmatization. This prepares the text data for use in machine learning models.
+2. **Feature Extraction:** Transforming the cleaned tweets into numerical representations using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. This creates a matrix where each row represents a tweet, and each column represents a word or phrase (n-gram) from the vocabulary.
+3. **Model Training and Evaluation:** Training two classification models: Support Vector Classifier (SVC) and Naive Bayes Classifier (NBC). Using 10-fold cross-validation to evaluate the models' performance. Accuracy is used as the evaluation metric.
+
+## Results
+
+The project reports the cross-validation accuracy for both SVC and NBC. This accuracy score represents the average performance of the model across the 10 folds of cross-validation, giving an estimate of how well the model is expected to perform on unseen data. By comparing the accuracies of the two models, you can determine which model is better suited for this particular task.
+
+## Requirements
+
+- Python 3.x
+- Libraries:
+    - pandas
+    - numpy
+    - scikit-learn
+    - nltk
+    - beautifulsoup4
+    - joblib
+
+## Usage
+
+1. Clone the repository.
+2. Install the required libraries using `pip install -r requirements.txt`.
+3. Place your dataset in the project directory.
+4. Update the file path in the code to point to your dataset.
+5. Run the code using `python main.py`.
+
+## Contributing
+
+Contributions to this project are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
