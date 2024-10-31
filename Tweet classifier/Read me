@@ -3,6 +3,7 @@
 This project focuses on building and evaluating machine learning models for sentiment analysis of tweets. The goal is to predict the sentiment expressed in a tweet, classifying it as positive, negative, or neutral.
 
 ## Dataset
+link: https://drive.google.com/file/d/1TjNfDvOtovLLV9Ppx2tKnXYAlvcjIxp-/view?usp=sharing
 
 The project uses a dataset of tweets, which is loaded from a CSV file. The dataset should contain at least two columns:
 
